@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart City - Sensor 23</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Smart City Dashboard</h1>
+  <br>
+
+  <nav>
+    <a href="index.html">Dashboard</a>
+    <a href="historico.html">Histórico</a>
+    <a href="sobre.html">Sobre a Autora</a>
+  </nav>
+</header>
+<br>
+<br>
+
+<section class="card">
+  <h2>🌡️ Sensor 23</h2>
+  <p>
+    Monitoramento em tempo real de temperatura e umidade.
+    Sistema baseado em IoT com integração via API REST.
+  </p>
+</section>
+
+
+<section class="dashboard">
+
+  <div class="card">
+    <h2>🌡️ Temperatura</h2>
+    <div id="temp" class="valor temp">--</div>
+  </div>
+
+  <div class="card">
+    <h2>💧 Umidade</h2>
+    <div id="umid" class="valor umid">--</div>
+  </div>
+
+  <div class="card">
+    <h2>📅 Última atualização</h2>
+    <div id="data">--</div>
+  </div>
+
+  <div class="card">
+    <h2>📍 Localização</h2>
+    <div id="localizacao">Carregando...</div>
+  </div>
+
+</section>
+
+<section class="card">
+  <h2>🔧 Componentes Utilizados</h2>
+
+  <div class="componentes">
+
+    <div class="componente">
+      <h3>🧠 ESP32</h3>
+      <p>
+        Microcontrolador com Wi-Fi integrado responsável por coletar e enviar os dados
+        do sensor para a API em tempo real.
+      </p>
+    </div>
+
+    <div class="componente">
+      <h3>🌡️ Sensor DHT11</h3>
+      <p>
+        Sensor utilizado para medir temperatura e umidade do ambiente,
+        fornecendo os dados principais do sistema.
+      </p>
+    </div>
+
+    <div class="componente">
+      <h3>🔌 Protoboard</h3>
+      <p>
+        Base de montagem que permite conectar os componentes sem solda,
+        facilitando testes e organização do circuito.
+      </p>
+    </div>
+
+    <div class="componente">
+      <h3>🔋 Bateria 3.7V 3.000mAh</h3>
+      <p>
+        Responsável por alimentar o sistema de forma portátil,
+        permitindo o funcionamento do sensor sem conexão direta à energia.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="card">
+  <h2>📡 Informações do Sensor</h2>
+  <div id="sensorInfo">
+    Carregando dados do sensor...
+  </div>
+</section>
+
+
+<section class="card">
+  <h2>📡 Status do Sensor</h2>
+  <p id="status">Conectando...</p>
+</section>
+
+
+<footer>
+  <p>Projeto Smart City • SENAI Roberto Mange • DS • 2026</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
